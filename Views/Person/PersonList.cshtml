@@ -1,0 +1,44 @@
+﻿@model IEnumerable<ConsumeAPI.Models.PersonModel>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2> Person List</h2>
+
+<p>
+    <a class="btn btn-outline-primary" asp-controller="Person" asp-action="PersonAdd">Add Person</a>
+</p>
+<p>
+    @TempData["Message"]
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Person ID</th>
+            <th>Name</th>
+            <th>Contact</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th>@item.PersonID</th>
+                <th>@item.Name</th>
+                <th>@item.Contact</th>
+                <th>@item.Email</th>
+                <td>
+                    <a href="@Url.Action("PersonAdd","Person",new {PersonID = item.PersonID})" class="btn btn-info">Edit</a>
+                    <a href="@Url.Action("Delete","Person",new {PersonID = item.PersonID})" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+
+
+        }
+
+    </tbody>
+</table>
