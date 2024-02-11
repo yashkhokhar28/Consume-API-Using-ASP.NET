@@ -1,30 +1,52 @@
 ﻿@model ConsumeAPI.Models.PersonModel
 
 
-<h2>Add.Edit</h2>
-<hr />
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="pagetitle">
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+            <li class="breadcrumb-item active">Persons</li>
+        </ol>
+    </nav>
+</div><!-- End Page Title -->
 <div class="row">
-    <div class="col-md-4">
-        <form asp-action="Save">
-            <div></div>
-            <@Html.HiddenFor(x => x.PersonID)
-            <div class="form-group">
-                <span class="text-danger"></span>
-                <label asp-for="Name" class="control-lable"></label>
-                <input type="text" asp-for="Name" class="form-control"/>
-                <span asp-validation-for="Name" class="text-danger"></span>
+    <div class="col-md-12">
+        <form class="row g-3" role="form" method="post" asp-controller="Person" asp-action="Save">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @Html.HiddenFor(x => x.PersonID)
+            <div class="col-md-12">
+                <div class="form-floating">
+                    <input type="text" class="form-control" asp-for="Name" placeholder="Enter Name" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                    <label for="floatingName">Name</label>
+                </div>
             </div>
-            <div class="form-group">
-                <span class="text-danger"></span>
-                <label asp-for="Email" class="control-lable"></label>
-                <input type="text" asp-for="Email" class="form-control"/>
-                <span asp-validation-for="Email" class="text-danger"></span>
+            <div class="col-md-12">
+                <div class="form-floating">
+                    <input type="text" class="form-control" asp-for="Email" placeholder="Enter Email" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                    <label for="floatingName">Email</label>
+                </div>
             </div>
-            <div class="form-group">
-                <span class="text-danger"></span>
-                <label asp-for="Contact" class="control-lable"></label>
-                <input type="text" asp-for="Contact" class="form-control"/>
-                <span asp-validation-for="Contact" class="text-danger"></span>
+            <div class="col-md-12">
+                <div class="form-floating">
+                    <input type="text" class="form-control" asp-for="Contact" placeholder="Enter Contact" />
+                    <span asp-validation-for="Contact" class="text-danger"></span>
+                    <label for="floatingName">Contact</label>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-floating mb-3">
+                    <select class="form-control" asp-for="CityID" asp-items="@(new SelectList(ViewBag.CityList,"CityID","CityName"))">
+                        <option value="">Select City</option>
+                    </select>
+                    <span asp-validation-for="CityID" class="text-danger"></span>
+                    <label for="floatingSelect">City Name</label>
+                </div>
             </div>
             <div class="form-group mt-2">
                 <button asp-action="Save" class="btn btn-outline-dark">Save</button>

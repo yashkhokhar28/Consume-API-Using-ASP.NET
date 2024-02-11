@@ -9,51 +9,59 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ConsumeAPI
 build_property.RootNamespace = ConsumeAPI
-build_property.ProjectDir = D:\ASP.NET\Projects\ConsumeAPI\
+build_property.ProjectDir = D:\ASP.NET\Projects\ConsumeAPI\Consume-API-Using-ASP.NET\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\ASP.NET\Projects\ConsumeAPI
+build_property.MSBuildProjectDirectory = D:\ASP.NET\Projects\ConsumeAPI\Consume-API-Using-ASP.NET
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/ASP.NET/Projects/ConsumeAPI/Views/Home/Index.cshtml]
+[D:/ASP.NET/Projects/ConsumeAPI/Consume-API-Using-ASP.NET/Views/City/CityList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0eVxDaXR5TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP.NET/Projects/ConsumeAPI/Consume-API-Using-ASP.NET/Views/City/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0eVxfVmFsaWRhdGlvblNjcmlwdHNQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ASP.NET/Projects/ConsumeAPI/Consume-API-Using-ASP.NET/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ASP.NET/Projects/ConsumeAPI/Views/Home/Privacy.cshtml]
+[D:/ASP.NET/Projects/ConsumeAPI/Consume-API-Using-ASP.NET/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ASP.NET/Projects/ConsumeAPI/Views/Person/PersonAddEdit.cshtml]
+[D:/ASP.NET/Projects/ConsumeAPI/Consume-API-Using-ASP.NET/Views/Person/PersonAddEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXFBlcnNvbkFkZEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ASP.NET/Projects/ConsumeAPI/Views/Person/PersonList.cshtml]
+[D:/ASP.NET/Projects/ConsumeAPI/Consume-API-Using-ASP.NET/Views/Person/PersonList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXFBlcnNvbkxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ASP.NET/Projects/ConsumeAPI/Views/Person/_ValidationScriptsPartial.cshtml]
+[D:/ASP.NET/Projects/ConsumeAPI/Consume-API-Using-ASP.NET/Views/Person/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ASP.NET/Projects/ConsumeAPI/Views/Shared/Error.cshtml]
+[D:/ASP.NET/Projects/ConsumeAPI/Consume-API-Using-ASP.NET/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ASP.NET/Projects/ConsumeAPI/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/ASP.NET/Projects/ConsumeAPI/Consume-API-Using-ASP.NET/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ASP.NET/Projects/ConsumeAPI/Views/_ViewImports.cshtml]
+[D:/ASP.NET/Projects/ConsumeAPI/Consume-API-Using-ASP.NET/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ASP.NET/Projects/ConsumeAPI/Views/_ViewStart.cshtml]
+[D:/ASP.NET/Projects/ConsumeAPI/Consume-API-Using-ASP.NET/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ASP.NET/Projects/ConsumeAPI/Views/Shared/_Layout.cshtml]
+[D:/ASP.NET/Projects/ConsumeAPI/Consume-API-Using-ASP.NET/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-hvqtjje0lm

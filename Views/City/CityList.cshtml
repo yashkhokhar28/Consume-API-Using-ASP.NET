@@ -1,0 +1,29 @@
+﻿@model IEnumerable<ConsumeAPI.Models.CityModel>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2> City List</h2>
+<p>
+    @TempData["Message"]
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">City ID</th>
+            <th scope="col">City Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="col">@item.CityID</th>
+                <th scope="col">@item.CityName</th>
+            </tr>
+        }
+
+    </tbody>
+</table>

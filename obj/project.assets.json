@@ -60,11 +60,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ASP.NET\\Projects\\ConsumeAPI\\ConsumeAPI.csproj",
+      "projectUniqueName": "D:\\ASP.NET\\Projects\\ConsumeAPI\\Consume-API-Using-ASP.NET\\ConsumeAPI.csproj",
       "projectName": "ConsumeAPI",
-      "projectPath": "D:\\ASP.NET\\Projects\\ConsumeAPI\\ConsumeAPI.csproj",
+      "projectPath": "D:\\ASP.NET\\Projects\\ConsumeAPI\\Consume-API-Using-ASP.NET\\ConsumeAPI.csproj",
       "packagesPath": "C:\\Users\\yashk\\.nuget\\packages\\",
-      "outputPath": "D:\\ASP.NET\\Projects\\ConsumeAPI\\obj\\",
+      "outputPath": "D:\\ASP.NET\\Projects\\ConsumeAPI\\Consume-API-Using-ASP.NET\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\yashk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -117,7 +117,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

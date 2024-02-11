@@ -1,6 +1,7 @@
 ﻿using ConsumeAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using System.Globalization;
 
 namespace ConsumeAPI.Controllers
 {
@@ -48,28 +49,35 @@ namespace ConsumeAPI.Controllers
         {
             try
             {
-                MultipartFormDataContent multipartFormDataContent = new MultipartFormDataContent();
-                multipartFormDataContent.Add(new StringContent(personModel.Name), "Name");
-                multipartFormDataContent.Add(new StringContent(personModel.Email), "Email");
-                multipartFormDataContent.Add(new StringContent(personModel.Contact), "Contact");
-                if (personModel.PersonID == 0)
+                if (ModelState.IsValid)
                 {
-                    HttpResponseMessage response = await _httpClient.PostAsync($"{_httpClient.BaseAddress}/Person/Post", multipartFormDataContent);
-                    if (response.IsSuccessStatusCode)
+                    MultipartFormDataContent multipartFormDataContent = new MultipartFormDataContent();
+                    multipartFormDataContent.Add(new StringContent(personModel.Name), "Name");
+                    multipartFormDataContent.Add(new StringContent(personModel.Email), "Email");
+                    multipartFormDataContent.Add(new StringContent(personModel.Contact), "Contact");
+                    multipartFormDataContent.Add(new StringContent(personModel.CityID.ToString()), "CityID");
+                    if (personModel.PersonID == 0)
                     {
-                        TempData["Message"] = "Person Added Successfully";
-                        return RedirectToAction("GET");
+                        HttpResponseMessage response = await _httpClient.PostAsync($"{_httpClient.BaseAddress}/Person/Post", multipartFormDataContent);
+                        if (response.IsSuccessStatusCode)
+                        {
+                            TempData["Message"] = "Person Added Successfully";
+                            ViewBag.CityList = CityDropDown();
+                            return RedirectToAction("GET");
+                        }
+                    }
+                    else
+                    {
+                        HttpResponseMessage response = await _httpClient.PutAsync($"{_httpClient.BaseAddress}/Person/Put/{personModel.PersonID}", multipartFormDataContent);
+                        if (response.IsSuccessStatusCode)
+                        {
+                            TempData["Message"] = "Person Updated Successfully";
+                            ViewBag.CityList = CityDropDown();
+                            return RedirectToAction("GET");
+                        }
                     }
                 }
-                else
-                {
-                    HttpResponseMessage response = await _httpClient.PutAsync($"{_httpClient.BaseAddress}/Person/Put/{personModel.PersonID}", multipartFormDataContent);
-                    if (response.IsSuccessStatusCode)
-                    {
-                        TempData["Message"] = "Person Updated Successfully";
-                        return RedirectToAction("GET");
-                    }
-                }
+
             }
             catch (Exception ex)
             {
@@ -91,8 +99,27 @@ namespace ConsumeAPI.Controllers
                 var extractedData = JsonConvert.SerializeObject(dataOfObject, Formatting.Indented);
                 personModels = JsonConvert.DeserializeObject<PersonModel>(extractedData);
             }
+            ViewBag.CityList = CityDropDown();
             return View("PersonAddEdit", personModels);
         }
+
+        #region City DropDown
+        [HttpGet]
+        public List<CityDropDownModel> CityDropDown()
+        {
+            List<CityDropDownModel> cityDropDownModels = new List<CityDropDownModel>();
+            HttpResponseMessage response = _httpClient.GetAsync($"{_httpClient.BaseAddress}/City/DropDown").Result;
+            if (response.IsSuccessStatusCode)
+            {
+                string data = response.Content.ReadAsStringAsync().Result;
+                dynamic jsonObject = JsonConvert.DeserializeObject<dynamic>(data);
+                var dataOfObject = jsonObject.data;
+                var extractedData = JsonConvert.SerializeObject(dataOfObject, Formatting.Indented);
+                cityDropDownModels = JsonConvert.DeserializeObject<List<CityDropDownModel>>(extractedData);
+            }
+            return cityDropDownModels;
+        }
+        #endregion
 
     }
 }
