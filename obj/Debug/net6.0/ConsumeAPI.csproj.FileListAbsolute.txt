@@ -59,9 +59,9 @@ D:\ASP.NET\Projects\ConsumeAPI\Consume-API-Using-ASP.NET\obj\Debug\net6.0\static
 D:\ASP.NET\Projects\ConsumeAPI\Consume-API-Using-ASP.NET\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\ASP.NET\Projects\ConsumeAPI\Consume-API-Using-ASP.NET\obj\Debug\net6.0\scopedcss\bundle\ConsumeAPI.styles.css
 D:\ASP.NET\Projects\ConsumeAPI\Consume-API-Using-ASP.NET\obj\Debug\net6.0\scopedcss\projectbundle\ConsumeAPI.bundle.scp.css
-D:\ASP.NET\Projects\ConsumeAPI\Consume-API-Using-ASP.NET\obj\Debug\net6.0\ConsumeAPI.csproj.CopyComplete
 D:\ASP.NET\Projects\ConsumeAPI\Consume-API-Using-ASP.NET\obj\Debug\net6.0\ConsumeAPI.dll
 D:\ASP.NET\Projects\ConsumeAPI\Consume-API-Using-ASP.NET\obj\Debug\net6.0\refint\ConsumeAPI.dll
 D:\ASP.NET\Projects\ConsumeAPI\Consume-API-Using-ASP.NET\obj\Debug\net6.0\ConsumeAPI.pdb
 D:\ASP.NET\Projects\ConsumeAPI\Consume-API-Using-ASP.NET\obj\Debug\net6.0\ConsumeAPI.genruntimeconfig.cache
 D:\ASP.NET\Projects\ConsumeAPI\Consume-API-Using-ASP.NET\obj\Debug\net6.0\ref\ConsumeAPI.dll
+D:\ASP.NET\Projects\ConsumeAPI\Consume-API-Using-ASP.NET\obj\Debug\net6.0\ConsumeAPI.csproj.Up2Date
